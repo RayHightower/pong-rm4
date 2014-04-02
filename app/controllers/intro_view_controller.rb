@@ -1,3 +1,3 @@
-class introViewController < UIViewController
+class IntroViewController < UIViewController
 
 end
