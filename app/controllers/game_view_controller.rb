@@ -6,8 +6,9 @@ class GameViewController < UIViewController
     @object_start = [20, 50]
     @paddle_size = [20, 100]
 
-    self.view = UIView.alloc.initWithFrame(UIScreen.mainScreen.bounds)
-    # self.view = UIView.alloc.initWithFrame([[0,0], [480,320]])
+    # self.view = UIView.alloc.initWithFrame(UIScreen.mainScreen.bounds)
+    # self.view = UIView.alloc.initWithFrame([[0,0], [1136, 640]])
+    self.view = UIView.alloc.initWithFrame([[0,0], [568, 320]])
 
     # RGB 40, 99, 34 = UIColor.tennisCourtGreenColor :-)
     # RGB 0, 0, 205 = A shade of blue
@@ -39,7 +40,7 @@ class GameViewController < UIViewController
   def create_right_paddle
     @right_paddle_view = PaddleView.alloc.initWithFrame [[620,50], @paddle_size]
     # @right_paddle_view.center = [self.view.size.height-20, self.view.size.width/2] # if x>160+/-, the  right paddle  will not respond to touch events.
-    @right_paddle_view.center = [420, self.view.size.width/2] # if x>160+/-, the  right paddle  will not respond to touch events.
+    @right_paddle_view.center = [ 548, self.view.size.width/2] # if x>160+/-, the  right paddle  will not respond to touch events.
     @right_paddle_view.backgroundColor = UIColor.whiteColor
     self.view.addSubview(@right_paddle_view)
   end
