@@ -92,7 +92,7 @@ class GameViewController < UIViewController
     end
     
     # If the ball hits the top or bottom wall, bounce y in the opposite direction, while x-direction remains unchanged.
-    if ((@ball_view.center.y + @ball_view.frame.size.height > self.view.frame.size.height) || @ball_view.frame.origin.y < 0)
+    if ((@ball_view.center.y + @ball_view.frame.size.height/2 > self.view.frame.size.height) || @ball_view.frame.origin.y < 0)
        @direction_y *= -1
     end
 
