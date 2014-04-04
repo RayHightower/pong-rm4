@@ -59,7 +59,7 @@ class GameViewController < UIViewController
     self.view.addSubview(@left_score)
 
     @right_score = ScoreLabel.new
-    @right_score.center = [360, 30]
+    @right_score.center = [426, 30]
     @right_score_num = 0
     self.view.addSubview(@right_score)
   end
