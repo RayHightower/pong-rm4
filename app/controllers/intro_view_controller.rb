@@ -28,7 +28,6 @@ class IntroViewController < UIViewController
     @startbutton.sizeToFit
     upper_left_button = [ (self.view.frame.size.height - button_width) / 2, self.view.frame.size.width / 2 ]
     @startbutton.frame = [ upper_left_button, [button_width, 30]]
-    # @startbutton.center = [self.view.frame.size.height / 2, self.view.frame.size.width]
     @startbutton.addTarget(self, action:"start_game", forControlEvents:UIControlEventTouchUpInside)
     self.view.addSubview(@startbutton)
   end
