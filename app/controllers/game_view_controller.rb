@@ -14,10 +14,6 @@ class GameViewController < UIViewController
 
     # RGB 40, 99, 34 = UIColor.tennisCourtGreenColor :-)
     # RGB 0, 0, 205 = A shade of blue
-    # self.view.backgroundColor = UIColor.colorWithRed(0.0/255,
-    #                                                green: 0.0/255,
-    #                                                 blue: 205.0/255,
-    #                                                alpha: 1)
 
     self.view.backgroundColor = UIColor.colorWithRed(40.0/255,
                                                    green: 99.0/255,
