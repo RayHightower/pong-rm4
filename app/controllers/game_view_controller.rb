@@ -54,7 +54,7 @@ class GameViewController < UIViewController
 
   def create_left_paddle
     @left_paddle_view = PaddleView.alloc.initWithFrame [@object_start, @paddle_size]
-    @left_paddle_view.center = [20, self.view.size.width/2]
+    @left_paddle_view.center = [20, self.view.size.height/2]
     @left_paddle_view.backgroundColor = UIColor.whiteColor
     self.view.addSubview(@left_paddle_view)
   end
