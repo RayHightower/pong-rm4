@@ -23,7 +23,7 @@ class IntroViewController < UIViewController
   def create_start_button
     button_width = 100
     @startbutton = UIButton.buttonWithType(UIButtonTypeRoundedRect)
-    @startbutton.backgroundColor = UIColor.grayColor
+    @startbutton.backgroundColor = UIColor.orangeColor
     @startbutton.setTitle("Start Game", forState:UIControlStateNormal)
     @startbutton.sizeToFit
     upper_left_button = [ (self.view.frame.size.height - button_width) / 2, self.view.frame.size.width / 2 ]
