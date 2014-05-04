@@ -12,4 +12,5 @@ Motion::Project::App.setup do |app|
   # Use `rake config' to see complete project settings.
   app.name = 'pong-rm4'
   app.interface_orientations = [ :landscape_right, :landscape_left ]
+  app.icons = ["pong-rm.jpg"]
 end
