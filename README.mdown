@@ -1,1 +1,3 @@
 More experiments with Pong and animation, this time for the 5, 5C, and 5S
+
+Use color more aggressively to identy components.
