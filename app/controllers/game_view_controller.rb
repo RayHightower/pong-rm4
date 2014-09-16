@@ -85,14 +85,14 @@ class GameViewController < UIViewController
         @direction_x *= -1
         self.reset_ball
     end
-    
+
     # If ball exits left, +1 for the right player
     if (@ball_view.center.x < 0)
         increment_right_score
         @direction_x *= -1
         self.reset_ball
     end
-    
+
     # If the ball hits the top or bottom wall, bounce y in the opposite direction, while x-direction remains unchanged.
     if ((@ball_view.center.y + @ball_view.frame.size.height/2 > self.view.frame.size.height) || @ball_view.frame.origin.y < 0)
        @direction_y *= -1
@@ -125,11 +125,11 @@ class GameViewController < UIViewController
   def reset_ball
     @ball_view.center = [240, 200]
     @direction_x *= -1
-    
+
     @game_timer.invalidate  # @game_timer.invalidate solved the acceleration problem. Why?
     start_game_timer
   end
-    
+
   def start_game_timer
     @game_timer = NSTimer.scheduledTimerWithTimeInterval(0.01,
                                                     target: self,
