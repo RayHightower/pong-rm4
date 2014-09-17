@@ -1,6 +1,4 @@
 pong-rm4
 ===
 
-More experiments with Pong and animation, this time for the 5, 5C, and 5S
-
-Use color more aggressively to identy components.
+This branch of `pong-rm4` makes use of [SpriteKit](https://developer.apple.com/library/ios/documentation/GraphicsAnimation/Conceptual/SpriteKit_PG/Introduction/Introduction.html) for its animation and physics engine.
